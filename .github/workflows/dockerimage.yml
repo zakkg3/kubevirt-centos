@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Ubuntu Build & push
 
 on: [release]
 
