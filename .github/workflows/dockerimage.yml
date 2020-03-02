@@ -1,0 +1,14 @@
+name: Docker Image CI
+
+on: [tag]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Ubuntu Docker image
+      run: docker build . --file ubuntu185/Dockerfile --tag zakkg3/kubevirt-ubuntu:$(date +%s)
