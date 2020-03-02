@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Ubuntu Docker image
-      run: docker build . --file ubuntu185/Dockerfile --tag zakkg3/kubevirt-ubuntu:$(date +%s)
+      run: docker build ubuntu185/ --file ubuntu185/Dockerfile --tag zakkg3/kubevirt-ubuntu:$(date +%s)
