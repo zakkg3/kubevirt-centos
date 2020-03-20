@@ -22,3 +22,15 @@ download https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.q
 then 
 docker build . -t zakkg3/kubevirt-centos:latest
 docker push zakkg3/kubevirt-centos:latest
+
+
+# Create image
+
+1- Upload your base image
+2- run a machine based on the pvc of the previus step
+3- Run cdist and install all you need in this image.Then poweroff
+4- run a pod with this pvc attached.
+5- Kubectl cp to your machine
+6- Create the container and push to the registry with the image.
+All here:
+taiga story: nkowenski-leomed/us/34?kanban-status=15
