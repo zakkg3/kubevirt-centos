@@ -1,0 +1,14 @@
+name: Ubuntu Build & push
+
+on: [release]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Ubuntu Docker image
+      run: docker build ubuntu185/ --file ubuntu185/Dockerfile -t zakkg3/kubevirt-ubuntu:$(date +%s)

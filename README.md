@@ -1,5 +1,6 @@
 # kubevirt-images
 
+![Docker Image CI](https://github.com/zakkg3/kubevirt-images/workflows/Docker%20Image%20CI/badge.svg)
 
 ## usage
 
